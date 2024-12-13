@@ -24,6 +24,6 @@ The following processing is done for the interferograms (in order):
 2. Apodization (Suppress the formation of sidelobes by bringing the end-points smoothly to zero. Blackman-harris filter is used).
 3. Ramp-windowing the centerburst (To awoid wiggles in spectra)
 4. 2-Term zero padding (Length of interferograms increased to the next power of two, decreases spectral artefacts)
-5. Rotating the interferograms
+5. Rotating the interferograms (pulse to the right of the ZPD set to start, side of the pulse to the left of the ZPD set to the end. Results in Kramers–Kronig relations) 
 6. Fast-Fourier Transform (FFT)
 7. Mertz-Phase correction (Makes absorption spectra more photometrically accurate)
