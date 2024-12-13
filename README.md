@@ -1,5 +1,6 @@
 # Processing of Agilent Interferogram Data to Spectra in MATLAB
 Author: Rasmus Hiltunen <rasmus.hiltunen@uef.fi>
+
 Note: Tested only on Agilent Cary 620/670 microspectrometer output files in MATLAB R2023a.
 
 # About
