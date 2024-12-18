@@ -8,10 +8,7 @@ Simple code to load Agilent interferogram files and process them to absorption s
 
 The codes for loading the Agilent output files heavily relies on the work by Alex Henderson (<https://github.com/AlexHenderson/agilent-ir-formats>).
 
-Innovation for processing the interferograms taken from multiple sources of literature.
-1. Werner Herress & Joern Gronholz "Understand FT-IR Data Processing"
-
-Special mention to the codes by Lars Yunker at the University of Victoria, Victoria, B.C., Canada (<https://github.com/larsyunker/FTIR-python-tools>).
+Special mention to Lars Yunker from the University of Victoria, Victoria, B.C., Canada (<https://github.com/larsyunker/FTIR-python-tools>).
 
 # Using the code
 The code requires the following (Main.m)
