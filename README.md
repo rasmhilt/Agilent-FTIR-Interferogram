@@ -21,7 +21,8 @@ The code requires the following (Main.m)
 The script (AgilentSpectraFromInterferograms.m) extracts information from the measurement .bsp file (e.g., user-selected wavenumber region, name of the background file) and calculates the absorption spectra.
 
 The following processing is done for the interferograms (in order):
-1. Interferograms set to zero mean
+
+**1. Interferograms set to zero mean**
   - Preparation for step number 4.
 
 2. Apodization (Suppress the formation of sidelobes by bringing the end-points smoothly to zero. Blackman-harris filter is used).
