@@ -1,12 +1,12 @@
 # Processing of Agilent Interferogram Data to Spectra in MATLAB
 Author: Rasmus Hiltunen <rasmus.hiltunen@uef.fi>
 
-Note: Tested only on Agilent Cary 620/670 microspectrometer output files in MATLAB R2023a.
+Note: Tested on Agilent Cary 620/670 output files, MATLAB R2023a.
 
 # About
-Simple code to load Agilent interferogram files and process them to absorption spectra. Works on single tile (.seq) and mosaic (.dmt) measurements.
+Code to load Agilent interferogram files and process them to absorbtion spectra. Works on single tile (.seq) and mosaic (.dmt) measurements.
 
-The codes for loading the Agilent output files heavily relies on the work by Alex Henderson (<https://github.com/AlexHenderson/agilent-ir-formats>).
+The codes for loading the Agilent output files heavily rely on the work by Alex Henderson (<https://github.com/AlexHenderson/agilent-ir-formats>).
 
 Special mention to Lars Yunker from the University of Victoria, Victoria, B.C., Canada (<https://github.com/larsyunker/FTIR-python-tools>).
 
@@ -28,7 +28,7 @@ The following processing is done for the interferograms (in order):
 
 **3. Ramp-windowing the centerburst. Gronholz & Herres, _Understanding FT-IR data processing. Part 2: Details of the spectrum calculation_, 2007.**
  - The centerburst in windowed with a ramp function (0 at -N/2, linear rise to 1 at N/2).
- - The ramp can be decomposed to and odd part and an even part. The even part prevents the -N/2 to N/2 range around the centerburst from being counted twice, which can lead to unrealistically high absorption intensities.
+ - The ramp can be decomposed to an odd part and an even part. The even part prevents the -N/2 to N/2 range around the centerburst from being counted twice, which can lead to unrealistically high absorption intensities.
  - Agilent does not seem to include this in their spectral calculations. This can be seen as visible absorption interfaces between adjacent tiles measured using the 'Mosaic Scan' option. Inclusion here lessens this scaling problem, but does not completely remove it.
 
 **4. 2-Term zero padding**
